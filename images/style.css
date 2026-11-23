@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: aliceblue;
+    padding: 0 12%;
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+a{
+    text-decoration:none;
+}
+.logo{
+    font-weight: bold;
+    font-size: 25px;
+    color:#81522e;
+}
+.menu ul{
+    display: flex;
+    gap:40px;
+    list-style: none;
+    align-items: center;
+}
+.menu a{
+    color:#333;
+    transition: 0.5s;
+}
+.menu a:hover{
+    color:#81522e;
+}
+.btn{
+    padding: 8px 30px;
+    font-size: 16px;
+    border:none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #81522e;
+    color:#fff;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #af6d3b;
+}
+.home{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin:20px 0;
+}
+.home h4{
+    font-family: 'Monsieur La Doulaise',cursive;
+    font-size: 72px;
+    color:#81522e;
+}
+.home h1{
+    font-size: 72px;
+    color:#81522e;
+    line-height: 72px;
+}
+.images{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.images img{
+   width: 20%;
+   height: 400px;
+   object-fit: cover;
+   border-radius: 20%;
+   transition:0.5s;
+}
+.images img:hover{
+   width: 30%;
+   cursor: pointer;
+   filter:contrast(1.1)
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container, .produits, header, nav {
+    width: 100% ;
+    flex-direction: column ;
+  }
+}
